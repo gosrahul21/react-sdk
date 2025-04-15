@@ -103,7 +103,7 @@ const LoanEligibilityFlow = () => {
                 key={stepNum}
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
                   step >= stepNum
-                    ? "bg-blue-600 text-white"
+                    ? "bg-green-600 text-white"
                     : "bg-gray-200 text-gray-600"
                 }`}
               >
