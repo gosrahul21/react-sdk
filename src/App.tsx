@@ -103,7 +103,7 @@ const LoanEligibilityFlow = () => {
                 key={stepNum}
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
                   step >= stepNum
-                    ? "bg-green-600 text-white"
+                    ? "bg-green-800 text-white"
                     : "bg-gray-200 text-gray-600"
                 }`}
               >
@@ -113,7 +113,7 @@ const LoanEligibilityFlow = () => {
           </div>
           <div className="w-full bg-gray-200 rounded-full h-1.5">
             <div
-              className="bg-blue-600 h-1.5 rounded-full"
+              className="bg-green-700 h-1.5 rounded-full"
               style={{ width: `${(step / 6) * 100}%` }}
             ></div>
           </div>
@@ -157,8 +157,8 @@ const LoanEligibilityFlow = () => {
               disabled={mobileNumber.length !== 10}
               className={`w-full py-2 px-4 rounded-md text-white font-medium ${
                 mobileNumber.length === 10
-                  ? "bg-green-600 hover:bg-green-700 cursor-pointer"
-                  : "bg-green-400 cursor-not-allowed"
+                  ? "bg-green-700 hover:bg-green-800 cursor-pointer"
+                  : "bg-gray-400 cursor-not-allowed"
               }`}
             >
               Check Eligibility
